@@ -1,5 +1,5 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -395,7 +395,17 @@
   }
   .res-card:hover { border-color: rgba(201,168,76,0.4); }
   .res-card__icon {
-    width: 36px; height: 36px; margin-bottom: 16px; color: var(--gold);
+    width: 40px; height: 40px; margin-bottom: 24px; color: var(--gold); flex-shrink: 0;
+  }
+  .res-card__title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px; font-weight: 700;
+    color: #FFFFFF; margin-bottom: 10px; letter-spacing: -0.01em;
+  }
+  .res-card__desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px; font-weight: 400;
+    line-height: 1.65; color: rgba(255,255,255,0.60);
   }
   .res-card__text {
     font-family: 'Inter', sans-serif;
@@ -1091,73 +1101,60 @@
     <div class="res-grid">
 
       <div class="res-card">
-        <svg class="res-card__icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 4c-1 4-5 7-5 12a5 5 0 0010 0c0-5-4-8-5-12z"/>
-          <path d="M15 28v4M21 28v4M13 32h10"/>
+        <svg class="res-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 5c-1 4-5 7-5 12a5 5 0 0010 0c0-5-4-8-5-12z"/>
+          <path d="M17 29v4M23 29v4M15 33h10"/>
         </svg>
-        <p class="res-card__text">
-          <strong>Новое состояние</strong>
-          Мощный заряд уверенности в собственных силах
-        </p>
+        <p class="res-card__title">Новое состояние</p>
+        <p class="res-card__desc">Мощный заряд уверенности в собственных силах</p>
       </div>
 
       <div class="res-card">
-        <svg class="res-card__icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="18" cy="18" r="14"/>
-          <path d="M12 18l4 4 8-8"/>
+        <svg class="res-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="20" cy="20" r="15"/>
+          <path d="M13 20l5 5 9-10"/>
         </svg>
-        <p class="res-card__text">
-          <strong>Освобождение от ограничений</strong>
-          Перестройка мышления и снятие психологических блоков на пути к реализации масштабных целей
-        </p>
+        <p class="res-card__title">Освобождение от ограничений</p>
+        <p class="res-card__desc">Перестройка мышления и снятие психологических блоков на пути к реализации масштабных целей</p>
       </div>
 
       <div class="res-card">
-        <svg class="res-card__icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 30c3-7 7-11 14-11s11 4 14 11"/>
-          <circle cx="18" cy="10" r="4"/>
-          <path d="M10 18c2-3 4-5 8-5"/>
+        <svg class="res-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6c0 0-10 8-10 16a10 10 0 0020 0C30 14 20 6 20 6z"/>
+          <path d="M14 24c1-3 3-5 6-5"/>
         </svg>
-        <p class="res-card__text">
-          <strong>Вдохновение и перезагрузка</strong>
-          Уникальная энергетика одного из глубочайших каньонов Европы
-        </p>
+        <p class="res-card__title">Вдохновение и перезагрузка</p>
+        <p class="res-card__desc">Уникальная энергетика одного из глубочайших каньонов Европы</p>
       </div>
 
       <div class="res-card">
-        <svg class="res-card__icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="4" y="8" width="28" height="20" rx="2"/>
-          <path d="M4 14h28M12 14v14M24 14v14M4 21h28"/>
+        <svg class="res-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="9" width="30" height="22" rx="2"/>
+          <path d="M5 15h30M13 15v16M27 15v16M5 22h30"/>
         </svg>
-        <p class="res-card__text">
-          <strong>Передовые методики</strong>
-          Прикладные инструменты бизнес-моделирования — от глобальных задач к измеримым шагам
-        </p>
+        <p class="res-card__title">Передовые методики</p>
+        <p class="res-card__desc">Прикладные инструменты бизнес-моделирования — от глобальных задач к измеримым шагам</p>
       </div>
 
       <div class="res-card">
-        <svg class="res-card__icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="13" r="4"/>
-          <circle cx="24" cy="13" r="4"/>
-          <path d="M4 30c0-4.4 3.6-8 8-8M32 30c0-4.4-3.6-8-8-8M14 30v-4a4 4 0 018 0v4"/>
+        <svg class="res-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="14" cy="14" r="5"/>
+          <circle cx="26" cy="14" r="5"/>
+          <path d="M5 34c0-5 4-9 9-9M36 34c0-5-4-9-9-9M17 34v-5a3 3 0 016 0v5"/>
         </svg>
-        <p class="res-card__text">
-          <strong>Качественные связи</strong>
-          Глубокие дружеские отношения с единомышленниками
-        </p>
+        <p class="res-card__title">Качественные связи</p>
+        <p class="res-card__desc">Глубокие дружеские отношения с единомышленниками</p>
       </div>
 
       <div class="res-card res-card--featured">
-        <svg class="res-card__icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="4" y="4" width="28" height="28" rx="2"/>
-          <path d="M10 12h16M10 18h10M10 24h6"/>
-          <circle cx="28" cy="24" r="5" fill="rgba(201,168,76,0.15)" stroke="currentColor"/>
-          <path d="M26 24l1.5 1.5L30 22"/>
+        <svg class="res-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="6" y="5" width="24" height="30" rx="2"/>
+          <path d="M11 13h14M11 19h10M11 25h7"/>
+          <circle cx="30" cy="30" r="7" fill="rgba(201,168,76,0.12)"/>
+          <path d="M27.5 30l2 2 3-3.5"/>
         </svg>
-        <p class="res-card__text">
-          <strong>Готовый план</strong>
-          Визуальная карта с конкретными шагами по развитию бизнеса или личной стратегии — забираете с собой
-        </p>
+        <p class="res-card__title">Готовый план</p>
+        <p class="res-card__desc">Визуальная карта с конкретными шагами по развитию бизнеса или личной стратегии — забираете с собой</p>
       </div>
 
     </div>
